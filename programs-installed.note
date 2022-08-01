@@ -1,13 +1,6 @@
-redshift 
-musescore 
-go
-python 
-fish 
-git
-<<<<<<< HEAD
-tree
-
-=======
-
-token: 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
->>>>>>> 3dda58d0f04be1dfdbd1c7360527bc2aa369d64b
+xorg xorg-xinit firefox bspwm sxhkd picom cool-retro-term nitrogen redshift musescore go python3 fish git tree udisk2
+vlc
+alsa-utils
+bluez bluez-utils
+blueman
+pulseaudio pulseaudio-alsa pulseaudio-bluetooth
