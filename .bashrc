@@ -11,7 +11,8 @@ alias ls='ls --color=auto'
 
 alias doc='cat ~/SysDocs/readme.txt | less'
 
-# fish 
+# Quick Access 
+alias jd="cd ~/JunkDrawer" 
 alias f="fish"
 
 # PS1 Modes
@@ -35,9 +36,13 @@ PS1='[\u@\h \W]\$ '
 PATH=~/.cbin:$PATH
 
 # Custom Binaries -- Recursive 
+# this is slow as shit on an HD 
 for d in /home/mholmes/.cbin/*/; do PATH+=":$d"
 done
 
 # Golang
 PATH=/usr/local/go/bin:$PATH 
+
+***** Dotfiles ******
+
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
