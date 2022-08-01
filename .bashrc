@@ -43,6 +43,6 @@ done
 # Golang
 PATH=/usr/local/go/bin:$PATH 
 
-***** Dotfiles ******
+# ***** Dotfiles ******
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
