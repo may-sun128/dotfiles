@@ -12,9 +12,7 @@ alias ls='ls --color=auto'
 alias doc='cat ~/SysDocs/readme.txt | less'
 
 # Quick Access 
-alias jd="cd ~/JunkDrawer"
-
-# fish 
+alias jd="cd ~/JunkDrawer" 
 alias f="fish"
 
 # PS1 Modes
