@@ -35,6 +35,7 @@ PS1='[\u@\h \W]\$ '
 PATH=~/.cbin:$PATH
 
 # Custom Binaries -- Recursive 
+# this is slow as shit on an HD 
 for d in /home/mholmes/.cbin/*/; do PATH+=":$d"
 done
 
