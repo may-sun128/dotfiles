@@ -11,6 +11,9 @@ alias ls='ls --color=auto'
 
 alias doc='cat ~/SysDocs/readme.txt | less'
 
+# Quick Access 
+alias jd="cd ~/JunkDrawer"
+
 # fish 
 alias f="fish"
 
@@ -41,4 +44,7 @@ done
 
 # Golang
 PATH=/usr/local/go/bin:$PATH 
+
+***** Dotfiles ******
+
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
