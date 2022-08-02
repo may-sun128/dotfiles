@@ -23,6 +23,7 @@ alias tdef='[\u@\h \W]\$ '
 # Redshift 
 alias warm='redshift -P -O 4000'
 alias warmer='redshift -P -O 2500'
+alias warmest='redshift -P -O 2000'
 alias cool='redshift -P -O 6000'
 
 # Volume 
