@@ -2,7 +2,16 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+# Original 
+#bspc monitor -d I II III IV V VI VII VIII IX X
+
+# Not working--I think this needs to be above the monitor line
+if [[ $HOSTNAME == arch ]]; then
+	bspc monitor LVDS-2 -d I II III IV V VI VII VIII IX X
+elif [[ $HOSTNAME == arch-dt ]]; then
+	bspc monitor HDMI-2 -d I II III IV V
+	bspc monitor DP-2 -d VI VII VIII IX X
+fi
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -16,3 +25,8 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+#!/bin/bash 
+
+
+
