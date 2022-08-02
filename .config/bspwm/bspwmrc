@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 #bspc monitor -d I II III IV V VI VII VIII IX X
 
 # Multiple Monitor Configuration 
-if [[ $HOSTNAME == arch ]]; then
+if [[ $HOSTNAME == arch-lt ]]; then
 	bspc monitor LVDS-2 -d I II III IV V VI VII VIII IX X
 elif [[ $HOSTNAME == arch-dt ]]; then
 	bspc monitor HDMI-2 -d I II III IV V
