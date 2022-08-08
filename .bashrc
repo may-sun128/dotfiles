@@ -29,6 +29,9 @@ alias cool='redshift -P -O 6000'
 # Volume 
 alias vol='alsamixer'
 
+# Shortcuts
+alias rmd='rm -rf'
+
 PS1='[\u@\h \W]\$ '
 
 # ***** Custom Path Envs ******
