@@ -31,6 +31,8 @@ alias vol='alsamixer'
 
 # Shortcuts
 alias rmd='rm -rf'
+alias x='chmod u+x'
+
 
 PS1='[\u@\h \W]\$ '
 
