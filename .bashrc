@@ -56,3 +56,4 @@ PATH=/home/mholmes/AUR/sublime-text-4/src/sublime_text/sublime_text:$PATH
 ## ***** Dotfiles ******
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
+. "$HOME/.cargo/env"
