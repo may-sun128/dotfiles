@@ -27,7 +27,13 @@ bspc config gapless_monocle      false
 #bspc rule -a mplayer2 state=floating
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
+# Set Pycharm to floating -- NOT WORKING
+bspc rule -a jetbrains-pycharm-ce state=floating
+
+# Set cursor 
+xsetroot -cursor_name left_ptr
  
 # Launch programs at start 
 sh $HOME/.config/bspwm/launch.sh & 
 
+wmname LG3D
