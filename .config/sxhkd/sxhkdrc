@@ -125,7 +125,7 @@ super + {Left,Down,Up,Right}
 #
 
 super + r
-	rofi -show
+	rofi -show drun
 
 
 

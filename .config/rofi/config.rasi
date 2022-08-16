@@ -1,2 +1,11 @@
-//@theme "/usr/share/rofi/themes/arthur.rasi"
+configuration {
+	display-drun: "Applications";
+	display-window: "Windows:";
+	drun-display-format: "{icon} {name}";
+	mode: "drun, window";
+	show-icons: true;
+}
+
+// If you want the theme configurations in this file, this needs to be set: 
+// @theme /dev/null@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 @theme "/usr/share/rofi/themes/DarkBlue.rasi"
