@@ -40,7 +40,10 @@ sh $HOME/.config/bspwm/launch.sh &
 # Fix Java display issues
 wmname LG3D
 
+# active #cda8f9
+# focused #95e3d6 
+
 # Change boarder color 
-bspc config active_border_color \#cda8f9
+bspc config active_border_color \#95e3d6
 bspc config normal_border_color \#8cb5fb
-bspc config focused_border_color \#95e3d6
+bspc config focused_border_color \#cda8f9
