@@ -7,14 +7,14 @@
  * Copyright: Rasmus Steinke
  ******************************************************************************/
 * {
-    // selected text 
-    //selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
+    // *** selected text *** 
+    selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
 
-    // unselected text 
+    // *** unselected text *** 
     foreground:                  rgba ( 129, 147, 150, 100 % );
     normal-foreground:           @foreground;
 
-    // row two 
+    // *** row two *** 
     alternate-normal-background: rgba ( 0, 54, 67, 100 % );
 
     // not sure/visable
@@ -38,9 +38,16 @@
     // not sure/visable
     lightbg:                     rgba ( 238, 232, 213, 100 % );
 
-    //selected-active-foreground:  rgba ( 102, 198, 255, 100 % );
+    // not sure/visable
+    selected-active-foreground:  rgba ( 102, 198, 255, 100 % );
+    
+    // not sure/visable
     alternate-active-background: rgba ( 0, 54, 67, 100 % );
+
+    // main background
     background:                  rgba ( 0, 43, 55, 100 % );
+
+    // not sure/visable
     bordercolor:                 rgba ( 0, 43, 55, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 43, 55, 100 % );
@@ -55,7 +62,7 @@
     background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 0, 43, 55, 100 % );
-    selected-active-background:  rgba ( 0, 142, 212, 100 % );
+    //selected-active-background:  rgba ( 0, 142, 212, 100 % );
 }
 window {
     background-color: @background;
