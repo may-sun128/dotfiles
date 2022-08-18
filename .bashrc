@@ -33,8 +33,8 @@ alias vol='alsamixer'
 alias rmd='rm -rf'
 alias x='chmod u+x'
 
-
-PS1='[\u@\h \W]\$ '
+# PS1 Default Config
+PS1='[\W] '
 
 # ***** Custom Path Envs ******
 
