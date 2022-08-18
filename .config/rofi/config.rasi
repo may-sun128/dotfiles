@@ -7,6 +7,17 @@
  * Copyright: Rasmus Steinke
  ******************************************************************************/
 * {
+
+    green: #a7e4a2;
+    zblue: #8ab5fc;
+    purple: #cda7f9;
+    yellow: #fae3b0;
+    red: #f48ba9;
+    black: #11111b;
+    lightgrey: #313244;
+    darkgrey: #181825;
+
+
     // *** selected text *** 
     selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
 
@@ -62,10 +73,10 @@
     background-color:            rgba ( 0, 0, 0, 0 % );
     alternate-active-foreground: @active-foreground;
     active-background:           rgba ( 0, 43, 55, 100 % );
-    //selected-active-background:  rgba ( 0, 142, 212, 100 % );
+    selected-active-background:  rgba ( 0, 142, 212, 100 % );
 }
 window {
-    background-color: @background;
+    background-color: @black;
     border:           1;
     padding:          5;
 }
@@ -75,16 +86,16 @@ mainbox {
 }
 message {
     border:       1px dash 0px 0px ;
-    border-color: @separatorcolor;
+    border-color: @purple;
     padding:      1px ;
 }
 textbox {
-    text-color: @foreground;
+    text-color: @purple;
 }
 listview {
     fixed-height: 0;
     border:       2px dash 0px 0px ;
-    border-color: @separatorcolor;
+    border-color: @zblue;
     spacing:      2px ;
     scrollbar:    true;
     padding:      2px 0px 0px ;
@@ -94,8 +105,8 @@ element {
     padding: 1px ;
 }
 element-text {
-    background-color: inherit;
-    text-color:       inherit;
+    background-color: @darkgrey;
+    text-color:       @purple;
 }
 element.normal.normal {
     background-color: @normal-background;
@@ -149,7 +160,7 @@ button.selected {
 }
 inputbar {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @green;
     padding:    1px ;
 }
 case-indicator {
