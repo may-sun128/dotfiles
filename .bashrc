@@ -36,6 +36,9 @@ alias x='chmod u+x'
 # PS1 Default Config
 PS1='[\W] '
 
+# Load Spotify with Adblock
+alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
+
 # ***** Custom Path Envs ******
 
 # Custom Binaries
