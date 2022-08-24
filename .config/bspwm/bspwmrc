@@ -31,6 +31,9 @@ bspc config gapless_monocle      false
 # Set Pycharm to floating 
 bspc rule -a jetbrains-pycharm-ce state=floating
 
+# Set Spotify to desktop 7
+bspc rule -a Spotify desktop='^7'
+
 # Set cursor 
 xsetroot -cursor_name left_ptr
  
