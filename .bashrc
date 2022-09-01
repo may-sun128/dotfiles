@@ -32,12 +32,17 @@ alias vol='alsamixer'
 # Shortcuts
 alias rmd='rm -rf'
 alias x='chmod u+x'
+alias lock='systemctl suspend'
 
 # PS1 Default Config
 PS1='[\W] '
 
 # Load Spotify with Adblock
 alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
+
+# Make Assembly Stuff
+alias acomp='nasm -f bin' 
+alias arun='qemu-system-x86_64'
 
 # ***** Custom Path Envs ******
 
