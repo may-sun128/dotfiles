@@ -49,4 +49,4 @@ bspc config normal_border_color \#8cb5fb
 bspc config focused_border_color \#cda8f9
 
 # Launch polybar at start 
-$HOME/.config/polybar/launch.sh
+#$HOME/.config/polybar/launch.sh
