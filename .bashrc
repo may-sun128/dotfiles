@@ -33,6 +33,7 @@ alias vol='alsamixer'
 alias rmd='rm -rf'
 alias x='chmod u+x'
 alias lock='systemctl suspend'
+alias lsd='ls -d */'
 
 # PS1 Default Config
 PS1='[\W] '

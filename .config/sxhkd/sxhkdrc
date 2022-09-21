@@ -127,5 +127,7 @@ super + {Left,Down,Up,Right}
 super + r
 	rofi -show drun
 
-
+# Run piano program 
+super + x
+	python $HOME/repos/python/synth/main.py
 
