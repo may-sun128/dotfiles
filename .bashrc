@@ -7,7 +7,11 @@
 
 alias ls='ls --color=auto'
 
+
+
 # *****  Custom Aliases *****
+
+
 
 alias doc='cat ~/SysDocs/readme.txt | less'
 
@@ -34,6 +38,7 @@ alias rmd='rm -rf'
 alias x='chmod u+x'
 alias lock='systemctl suspend'
 alias lsd='ls -d */'
+alias lsf='find . -maxdepth 1 -type f'
 
 # PS1 Default Config
 PS1='[\W] '
@@ -45,7 +50,10 @@ alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
 alias acomp='nasm -f bin' 
 alias arun='qemu-system-x86_64'
 
+
 # ***** Custom Path Envs ******
+
+
 
 # Custom Binaries
 PATH=~/.cbin:$PATH
