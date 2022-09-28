@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-
+alias lsnc='ls'
 
 
 # *****  Custom Aliases *****
@@ -22,7 +22,11 @@ alias f="fish"
 # PS1 Modes
 alias tmin='PS1="[\W] "'
 alias ttime='PS1="[\t][\W] "'
-alias tdef='[\u@\h \W]\$ '
+# not working
+alias tdef='PS1=[\u\h \W]\$ '
+# hide/show cursor
+alias no-cursor='tput civis'
+alias show-cursor='tput cnorm'
 
 # Redshift 
 alias warm='redshift -P -O 4000'
@@ -39,9 +43,10 @@ alias x='chmod u+x'
 alias lock='systemctl suspend'
 alias lsd='ls -d */'
 alias lsf='find . -maxdepth 1 -type f'
+alias free='free -g'
 
 # PS1 Default Config
-PS1='[\W] '
+PS1=''
 
 # Load Spotify with Adblock
 alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
@@ -74,3 +79,6 @@ PATH=/home/mholmes/AUR/sublime-text-4/src/sublime_text/sublime_text:$PATH
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
 . "$HOME/.cargo/env"
+
+# Enter Notepad Mode at Start
+#/home/mholmes/.cbin/./np
