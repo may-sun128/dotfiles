@@ -4,7 +4,11 @@
 
 # terminal emulator
 super + Return
-	cool-retro-term 
+	kitty
+
+# kitty terminal emulator 
+super + ctrl + Return 
+	cool-retro-term
 
 # program launcher
 super + @space
@@ -130,4 +134,5 @@ super + r
 # Run piano program 
 super + x
 	python $HOME/repos/python/synth/main.py
+
 

@@ -9,21 +9,23 @@ alias ls='ls --color=auto'
 alias lsnc='ls'
 
 
+
 # *****  Custom Aliases *****
 
 
-
-alias doc='cat ~/SysDocs/readme.txt | less'
 
 # Quick Access 
 alias jd="cd ~/JunkDrawer" 
 alias f="fish"
 
+# PS1 Default Config
+PS1=''
+
 # PS1 Modes
 alias tmin='PS1="[\W] "'
 alias ttime='PS1="[\t][\W] "'
-# not working
-alias tdef='PS1=[\u\h \W]\$ '
+alias tdef='PS1="\u@\h[\w] "'
+
 # hide/show cursor
 alias no-cursor='tput civis'
 alias show-cursor='tput cnorm'
@@ -44,9 +46,9 @@ alias lock='systemctl suspend'
 alias lsd='ls -d */'
 alias lsf='find . -maxdepth 1 -type f'
 alias free='free -g'
-
-# PS1 Default Config
-PS1=''
+# for kitty
+alias img='kitty +kitten icat' 
+alias cpcb='kitty +kitten clipboard' 
 
 # Load Spotify with Adblock
 alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
@@ -54,6 +56,9 @@ alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
 # Make Assembly Stuff
 alias acomp='nasm -f bin' 
 alias arun='qemu-system-x86_64'
+
+alias pb='. ~/.config/polybar/launch.sh'
+
 
 
 # ***** Custom Path Envs ******
@@ -75,10 +80,23 @@ PATH=/usr/local/go/bin:$PATH
 #Sublime -- might not be working; running `subl` launches but not `sublime_text` 
 PATH=/home/mholmes/AUR/sublime-text-4/src/sublime_text/sublime_text:$PATH
 
+
+
 ## ***** Dotfiles ******
+
+
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
 . "$HOME/.cargo/env"
 
+
+
+# ***** Startup Bash *****
+
+
+
 # Enter Notepad Mode at Start
-#/home/mholmes/.cbin/./np
+# /home/mholmes/.cbin/./np
+# no cursor by deault
+# tput civis
+
