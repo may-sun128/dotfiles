@@ -4,8 +4,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 # labled desktops
 if [[ $HOSTNAME == arch-dt ]]; then
-	bspc monitor HDMI-2 -d ● ● ● ● ●
-	bspc monitor DP-2 -d \| ● ● ● ●
+	bspc monitor HDMI-2 -d ● ● 
+	bspc monitor DP-2 -d \| ●
 fi
 
 bspc config border_width         2 
