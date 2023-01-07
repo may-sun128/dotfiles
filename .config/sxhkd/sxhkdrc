@@ -125,6 +125,14 @@ super + {Left,Down,Up,Right}
 # Custom Hotkeys
 #
 
+
+# cycle thru focused monitor w/ arrow keys
+super + {@Left, @Right}
+	bspc desktop -f {prev,next}
+
+super + @Up
+	bspc desktop -f ^1
+
 super + r
 	bash $HOME/.config/rofi/launchers/type-3/launcher.sh
 
