@@ -2,30 +2,10 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# Original 
-#bspc monitor -d I II III IV V VI VII VIII IX X
-
-# Big and Small Monitor Configuration w/ Laptop option 
-# if [[ $HOSTNAME == arch-dt ]]; then
-# 	bspc monitor HDMI-2 -d I II III IV V
-# 	bspc monitor DP-2 -d VI VII VIII IX X
-# elif [[ $HOSTNAME == arch-lt ]]; then
-# 	bspc monitor LVDS-2 -d I II III IV V VI VII VIII IX X
-
-# fi
-
-# Big Monitor and Big Goodwill Monitor Configuration 
-
-# Roman Numeral Setup
-# if [[ $HOSTNAME == arch-dt ]]; then
-# 	bspc monitor HDMI-2 -d I ii iii IV V vi vii 
-# 	bspc monitor DP-2 -d I ii iii X
-# fi
-
 # labled desktops
 if [[ $HOSTNAME == arch-dt ]]; then
-	bspc monitor HDMI-2 -d General Terminal Code Script Media  
-	bspc monitor DP-2 -d X XX XXX
+	bspc monitor HDMI-2 -d ● ● ● ● ●
+	bspc monitor DP-2 -d \| ● ● ● ●
 fi
 
 bspc config border_width         2 
@@ -49,9 +29,6 @@ bspc rule -a jetbrains-pycharm-ce state=floating
 
 # Set qjoypad to floating
 bspc rule -a qjoypad state=floating
-
-# Set Spotify to desktop 7
-bspc rule -a Spotify desktop='^7'
 
 # Set cursor 
 xsetroot -cursor_name left_ptr

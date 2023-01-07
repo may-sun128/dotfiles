@@ -129,10 +129,16 @@ super + {Left,Down,Up,Right}
 #
 
 super + r
-	rofi -show drun
+	bash $HOME/.config/rofi/launchers/type-3/launcher.sh
 
 # Run piano program 
 super + x
 	python $HOME/repos/python/synth/main.py
+
+super + v
+	python $HOME/.cbin/volume-control.py up
+
+super + z
+	python $HOME/.cbin/volume-control.py down
 
 
