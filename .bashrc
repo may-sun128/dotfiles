@@ -64,6 +64,10 @@ alias slp="rtcwake -m mem -a -t $(date +%s -d 'tomorrow 06:00')"
 # BSPWM 
 alias rename='bspc desktop --rename'
 alias workspace='bspc desktop --rename'
+alias ws='bspc desktop --rename'
+
+# Node 
+
 
 # System 
 alias ll='ls -l'
