@@ -15,9 +15,11 @@ super + ctrl + Return
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# bspwm hotkeys
-#
+
+
+### bspwm hotkeys ###
+
+
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -32,9 +34,10 @@ super + m
 	bspc desktop -l next
 
 
-#
-# state/flags
-#
+
+### Node State ###
+
+
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -42,9 +45,9 @@ super + {t,shift + t,s,f}
 
 
 
-#
-# focus/swap
-#
+### Focus & Swap ###
+
+
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -55,9 +58,9 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 
-#
-# move/resize
-#
+
+### Move & Resize ###
+
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -72,9 +75,10 @@ super + alt + shift + {h,j,k,l}
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 
-#
-# Custom Hotkeys
-#
+
+### Desktop Manipulation ###
+
+
 
 # cycle thru focused monitor w/ arrow keys
 super + {Left, Right}
@@ -89,19 +93,24 @@ super + Up
 super + n
 	bspc monitor --add-desktops "●"
 
+
+
+### Launchers and Controls ###
+
+
+
 super + r
 	bash $HOME/.config/rofi/launchers/type-3/launcher.sh
 
 super + v
-	python $HOME/.cbin/volume-control.py up
+	python $HOME/.scripts/volume-control.py up
 
 super + ctrl + v
-	python $HOME/.cbin/volume-control.py down
-
-
+	python $HOME/.scripts/volume-control.py down
 
 super + ctrl + w
 	bspc desktop --remove
 
 super + c
-	python $HOME/.cbin/temp/temp.py 
+	python $HOME/.scripts/temp/temp.py 
+

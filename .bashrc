@@ -65,6 +65,7 @@ alias slp="rtcwake -m mem -a -t $(date +%s -d 'tomorrow 06:00')"
 alias rename='bspc desktop --rename'
 alias workspace='bspc desktop --rename'
 alias ws='bspc desktop --rename'
+alias wsd='bspc desktop --rename "●"'
 
 # Node 
 
@@ -78,13 +79,11 @@ alias ll='ls -l'
 
 
 
-# Custom Binaries
-PATH=~/.cbin:$PATH
 
 # Custom Binaries -- Recursive 
 # this is slow as shit on an HD 
-for d in /home/mholmes/.cbin/*/; do PATH+=":$d"
-done
+#for d in /home/mholmes/.scripts/*/; do PATH+="$PATH:$d"; 
+#done
 
 # Golang
 PATH=/usr/local/go/bin:$PATH 
@@ -101,7 +100,6 @@ PATH=/home/mholmes/AUR/sublime-text-4/src/sublime_text/sublime_text:$PATH
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
 . "$HOME/.cargo/env"
-
 
 
 
