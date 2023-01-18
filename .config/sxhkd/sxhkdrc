@@ -43,6 +43,10 @@ super + m
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
+# make node sticky
+super + ctrl + s
+	bspc node -g sticky
+
 
 
 ### Focus & Swap ###
@@ -114,3 +118,8 @@ super + ctrl + w
 super + c
 	python $HOME/.scripts/temp/temp.py 
 
+super + ctrl + l
+	betterlockscreen -l
+
+super + ctrl + m
+	amixer set Master toggle

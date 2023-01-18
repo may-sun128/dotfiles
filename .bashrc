@@ -15,16 +15,16 @@ alias lsnc='ls'
 
 
 # Quick Access 
-alias jd="cd ~/JunkDrawer" 
 alias f="fish"
 
 # PS1 Default Config
-PS1=''
+PS1='[\W] '
 
 # PS1 Modes
 alias tmin='PS1="[\W] "'
 alias ttime='PS1="[\t][\W] "'
 alias tdef='PS1="\u@\h[\w] "'
+alias tfull='PS1="[\w] "'
 
 # hide/show cursor
 alias no-cursor='tput civis'
@@ -42,13 +42,17 @@ alias vol='alsamixer'
 # Shortcuts
 alias rmd='rm -rf'
 alias x='chmod u+x'
-alias lock='systemctl suspend'
 alias lsd='ls -d */'
 alias lsf='find . -maxdepth 1 -type f'
 alias free='free -g'
-# for kitty
 alias img='kitty +kitten icat' 
 alias cpcb='kitty +kitten clipboard' 
+alias ll='ls -l'
+alias la='ls -l -a'
+
+# Power Settings
+alias lock='systemctl suspend'
+alias dark='xset dpms force standby'
 
 # Load Spotify with Adblock
 alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
@@ -59,7 +63,6 @@ alias arun='qemu-system-x86_64'
 
 # Launch Polybar 
 alias pb='. ~/.config/polybar/launch.sh'
-alias slp="rtcwake -m mem -a -t $(date +%s -d 'tomorrow 06:00')"
 
 # BSPWM 
 alias rename='bspc desktop --rename'
@@ -67,23 +70,18 @@ alias workspace='bspc desktop --rename'
 alias ws='bspc desktop --rename'
 alias wsd='bspc desktop --rename "●"'
 
-# Node 
+# Accessibility 
+# `shift + numlock` to start
+alias mouse-keys='setxkbmap -option keypad:pointerkeys'
 
-
-# System 
-alias ll='ls -l'
-
+# For Pytify
+export SPOTIPY_CLIENT_ID='cb520e69c2654f8b97db57d85750ce76'
+export SPOTIPY_CLIENT_SECRET='edbcf6a71bad4db68b1bb29d321f753d'
 
 
 # ***** Custom Path Envs ******
 
 
-
-
-# Custom Binaries -- Recursive 
-# this is slow as shit on an HD 
-#for d in /home/mholmes/.scripts/*/; do PATH+="$PATH:$d"; 
-#done
 
 # Golang
 PATH=/usr/local/go/bin:$PATH 
