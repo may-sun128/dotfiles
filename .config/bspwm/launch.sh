@@ -10,4 +10,6 @@ python $HOME/.scripts/play-intro/play-intro.py &
 $HOME/.config/polybar/launch.sh &
 # launch alarm/sleep script 
 #$HOME/.scripts/sleepy/insomnia.sh &
+# launch ram check 
+python $HOME/.scripts/ram-alert/check_ram.py &
 firefox &

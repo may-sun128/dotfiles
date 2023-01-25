@@ -52,7 +52,7 @@ alias la='ls -l -a'
 
 # Power Settings
 alias lock='systemctl suspend'
-alias dark='xset dpms force standby'
+alias dark='sleep 1; xset dpms force standby'
 
 # Load Spotify with Adblock
 alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
@@ -61,8 +61,9 @@ alias spot='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
 alias acomp='nasm -f bin' 
 alias arun='qemu-system-x86_64'
 
-# Launch Polybar 
+# Polybar 
 alias pb='. ~/.config/polybar/launch.sh'
+alias pbk='pkill polybar; bspc config top_padding 0'
 
 # BSPWM 
 alias rename='bspc desktop --rename'
@@ -71,7 +72,7 @@ alias ws='bspc desktop --rename'
 alias wsd='bspc desktop --rename "●"'
 
 # Accessibility 
-# `shift + numlock` to start
+# shift + numlock to start
 alias mouse-keys='setxkbmap -option keypad:pointerkeys'
 
 # For Pytify
@@ -98,6 +99,16 @@ PATH=/home/mholmes/AUR/sublime-text-4/src/sublime_text/sublime_text:$PATH
 
 alias config='/usr/bin/git --git-dir=/home/mholmes/dotfiles/ --work-tree=/home/mholmes'
 . "$HOME/.cargo/env"
+
+
+
+# ***** Functions *****
+
+
+
+function search () {
+	find . -name "*$1*"
+}
 
 
 
