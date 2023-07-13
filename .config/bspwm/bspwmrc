@@ -5,8 +5,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # labled desktops
 if [[ $HOSTNAME == arch-dt ]]; then
 	bspc monitor HDMI-2 -d ● 
-	bspc monitor DP-2 -d \| ● 
+	bspc monitor DP-2 -d \| ●
 fi
+
 
 bspc config border_width         2 
 bspc config window_gap          27 # originally 12
@@ -15,6 +16,9 @@ bspc config window_gap          27 # originally 12
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      false
+
+# round corners 
+bspc config border_radius
 
 # Default rules--not deleting so I have an example 
 
@@ -27,6 +31,8 @@ bspc config gapless_monocle      false
 # Set Pycharm to floating 
 bspc rule -a jetbrains-pycharm-ce state=floating
 
+bspc rule -a cool-retro-term state=floating
+
 # Set qjoypad to floating
 bspc rule -a qjoypad state=floating
 
@@ -37,12 +43,13 @@ xsetroot -cursor_name left_ptr
 wmname LG3D 
 
 # Change boarder color 
+
 # unselected secondary monitor
-bspc config active_border_color \#3b4b66 # red
+bspc config active_border_color \#050b1b 
 # unselected
-bspc config normal_border_color \#4e3c7c # green
+bspc config normal_border_color \#050b1b 
 # selected boarder
-bspc config focused_border_color \#e1a58b #yellow
+bspc config focused_border_color \#678d9e
 
 # Launch programs at start 
 sh $HOME/.config/bspwm/launch.sh & 

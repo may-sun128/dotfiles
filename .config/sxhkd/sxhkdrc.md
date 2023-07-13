@@ -33,6 +33,9 @@
 	set node sticky 
 	NB: really only works with floating windows
 
+**super + `ctrl` f**
+	toggle fullscreen
+
 ## Focus & Swap
 
 **super + h, j, k, l**
@@ -91,19 +94,3 @@
 **super + `ctrl` + m**
 	mute volume
 
-# Bound Keys
-
-## Super
-`TODO: Finish this`
-enter
-escape
-w 
-m
-{
-	t
-	s
-	f
-}
-
-
-`Sun Jan  8 02:40:39 PM UTC 2023`

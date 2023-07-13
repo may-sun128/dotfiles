@@ -60,5 +60,5 @@ fi
 
 nitrogen --restore &
 # -f for fade
-picom -f &
+picom &
 exec bspwm

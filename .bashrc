@@ -19,6 +19,7 @@ alias f="fish"
 
 # PS1 Default Config
 PS1='[\W] '
+# PS1=$(python $HOME/repos/python/sing.py '[\W] ')
 
 # PS1 Modes
 alias tmin='PS1="[\W] "'
@@ -47,8 +48,9 @@ alias lsf='find . -maxdepth 1 -type f'
 alias free='free -g'
 alias img='kitty +kitten icat' 
 alias cpcb='kitty +kitten clipboard' 
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -l -a'
+alias bt='bluetoothctl'
 
 # Power Settings
 alias lock='systemctl suspend'
@@ -121,3 +123,4 @@ function search () {
 # no cursor by deault
 # tput civis
 
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"

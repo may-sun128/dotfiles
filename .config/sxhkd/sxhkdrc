@@ -43,6 +43,10 @@ super + m
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
+# toggle fullscreen
+super + ctrl + f
+	bspc node -t \~fullscreen
+
 # make node sticky
 super + ctrl + s
 	bspc node -g sticky
@@ -123,3 +127,4 @@ super + ctrl + l
 
 super + ctrl + m
 	amixer set Master toggle
+
